@@ -63,6 +63,21 @@ Moved to `Live reloading and SASS compilation`_.
 
 .. _`Live reloading and SASS compilation`: http://cookiecutter-django.readthedocs.io/en/latest/live-reloading-and-sass-compilation.html
 
+Format .ENV
+^^^^^^
+
+Environment variable of GCD gcd_online_library:
+
+.. code-block:: bash
+
+    export DATABASE_URL=postgres://postgres:<password_of_postgres>@127.0.0.1:5432/<name_db>
+    # Optional: set broker URL if using Celery
+    export CELERY_BROKER_URL=redis://localhost:6379/0
+    export USE_DOCKER=False
+    export EMAIL_HOST_USER=<your_email@gmail.com>
+    export EMAIL_HOST_PASSWORD=<your_email_password>
+    export DEFAULT_FROM_EMAIL=<your_email@gmail.com> # Same of EMAIL_HOST_USER
+
 Celery
 ^^^^^^
 
